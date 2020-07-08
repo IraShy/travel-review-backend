@@ -1,3 +1,11 @@
 Rails.application.routes.draw do
-  # For details on the DSL available within this file, see https://guides.rubyonrails.org/routing.html
+  resources :reviews
 end
+
+# Prefix Verb   URI Pattern            Controller#Action
+# reviews GET    /reviews(.:format)     reviews#index
+#         POST   /reviews(.:format)     reviews#create
+#  review GET    /reviews/:id(.:format) reviews#show
+#         PATCH  /reviews/:id(.:format) reviews#update
+#         PUT    /reviews/:id(.:format) reviews#update
+#         DELETE /reviews/:id(.:format) reviews#destroy
