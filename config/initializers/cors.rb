@@ -7,7 +7,7 @@
 
 Rails.application.config.middleware.insert_before 0, Rack::Cors do
   allow do
-    origins 'localhost:8080', '127.0.0.1:8080'
+    origins 'localhost:8080', '127.0.0.1:8080', 'https://pedantic-dijkstra-9e75fb.netlify.app'
 
     resource '*',
       headers: :any,
